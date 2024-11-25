@@ -3,7 +3,7 @@
 GhostEnum is a stealthy network enumeration and port scanning toolkit designed for red teams and penetration testers. It automates host discovery, port scanning, and provides actionable results with flexibility and stealth techniques. Ideal for post-exploitation reconnaissance, GhostEnum helps gather insights into target networks while maintaining operational stealth.
 Key Features
 
-    Stealthy Network Scanning:
+Stealthy Network Scanning:
         ICMP-based host discovery to identify live systems in the network.
         TCP SYN and UDP port scanning with randomized port order and delays to evade detection.
     Customizable Port Ranges:
@@ -15,7 +15,7 @@ Key Features
 
 #Use Cases
 
-    Red Teaming:
+Red Teaming:
     Conduct stealthy enumeration during engagements without alerting monitoring systems.
     Penetration Testing:
     Identify open ports and active hosts to discover potential attack vectors.
@@ -24,7 +24,7 @@ Key Features
 
 #How It Works
 
-    Host Discovery:
+Host Discovery:
     Uses ICMP requests to identify live hosts within a specified network.
     Port Scanning:
         TCP SYN Scan quickly identifies open TCP ports.
@@ -37,14 +37,14 @@ Key Features
 
 #Installation
 
-    Clone the repository by running:
+Clone the repository by running:
     `git clone git@github.com:un1xr00t/GhostEnum.git`
-    Then navigate to the project folder with:
+Then navigate to the project folder with:
     `cd GhostEnum`
 
-    Install dependencies by running:
+Install dependencies by running:
     `pip install -r requirements.txt`
-    Note that GhostEnum uses Python and the scapy library.
+Note that GhostEnum uses Python and the scapy library.
 
 Usage
 
@@ -59,32 +59,32 @@ Options:
 
 Examples:
 
-    To scan an entire network:
+To scan an entire network:
     `python ghostenum.py -n 192.168.1.0/24`
 
-    To scan a single host for specific ports:
+To scan a single host for specific ports:
     `python ghostenum.py -n 192.168.1.100 -p 20-80`
 
-    To save results to a custom file:
+To save results to a custom file:
     `python ghostenum.py -n 192.168.1.0/24 -o results.txt`
 
 Planned Features
 
-    Exploitation Module:
-    Automate the detection and exploitation of known vulnerabilities in services.
-    Pivoting Support:
-    Use `SOCKS` proxies to route traffic through compromised systems.
-    Visualization:
-    Graphical representation of network topologies and open ports.
+Exploitation Module:
+Automate the detection and exploitation of known vulnerabilities in services.
+Pivoting Support:
+Use `SOCKS` proxies to route traffic through compromised systems.
+Visualization:
+Graphical representation of network topologies and open ports.
 
 Contributing
 
 Contributions are welcome. If you would like to add features, fix bugs, or improve documentation:
 
-    Fork the repository.
-    Create a new branch with a name such as feature/your-feature-name.
-    Commit your changes and push them to GitHub.
-    Open a pull request.
+Fork the repository.
+Create a new branch with a name such as feature/your-feature-name.
+Commit your changes and push them to GitHub.
+Open a pull request.
 
 License
 
